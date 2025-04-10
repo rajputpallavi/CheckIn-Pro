@@ -1,0 +1,27 @@
+{
+  "name": "hostel_management",
+  "version": "1.0.0",
+  "description": "complete backend",
+  "main": "index.js",
+  "engines": {
+    "node": "18.x"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "ByteCrew",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "mongoose": "^8.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}

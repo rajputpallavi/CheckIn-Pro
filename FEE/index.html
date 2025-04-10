@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Hostel Management System</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#allotment">Hostel Allotment</a></li>
+            <li><a href="#booking">Room Booking</a></li>
+            <li><a href="#fees">Fees Payment</a></li>
+            <li><a href="#fine">Fine Payment</a></li>
+            <li><a href="#gatepass">Gate Pass (Outing)</a></li>
+            <li><a href="#complaints">Complaints</a></li>
+            <li><a href="#checkout">Checkout</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="allotment">
+            <h2>Hostel Allotment</h2>
+            <p>Select your hostel:</p>
+            <select>
+                <option value="A">Hostel A</option>
+                <option value="B">Hostel B</option>
+                <option value="C">Hostel C</option>
+            </select>
+            <button>Allot</button>
+        </section>
+
+        <section id="booking">
+            <h2>Room Booking</h2>
+            <p>Room Type:</p>
+            <select>
+                <option value="single">Single</option>
+                <option value="double">Double</option>
+                <option value="3seater">3 Seater</option>
+                <option value="4seater">4 Seater</option>
+            </select>
+            <p>AC/Non-AC:</p>
+            <select>
+                <option value="ac">AC</option>
+                <option value="nonac">Non-AC</option>
+            </select>
+            <button>Book Room</button>
+        </section>
+
+        <section id="fees">
+            <h2>Fees Payment</h2>
+            <p>Enter amount:</p>
+            <input type="number" placeholder="Amount">
+            <button>Pay Fees</button>
+        </section>
+
+        <section id="fine">
+            <h2>Fine Payment</h2>
+            <p>Enter fine amount:</p>
+            <input type="number" placeholder="Fine Amount">
+            <button>Pay Fine</button>
+        </section>
+
+        <section id="gatepass">
+            <h2>Gate Pass (Outing)</h2>
+            <p>Outing Date:</p>
+            <input type="date">
+            <p>Reason:</p>
+            <textarea placeholder="Reason for outing"></textarea>
+            <button>Apply for Gate Pass</button>
+        </section>
+
+        <section id="complaints">
+            <h2>Complaints</h2>
+            <p>Enter your complaint:</p>
+            <textarea placeholder="Your complaint"></textarea>
+            <button>Submit Complaint</button>
+        </section>
+
+        <section id="checkout">
+            <h2>Checkout</h2>
+            <p>Enter Student ID to Delete Room Booking and Data:</p>
+            <input type="text" placeholder="Student ID">
+            <button>Checkout Student</button>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Hostel Management</p>
+    </footer>
+</body>
+</html>
