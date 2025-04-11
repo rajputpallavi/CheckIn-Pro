@@ -1,9 +1,11 @@
 body {
-    background-image: url(/img/var4.jpg);
+    /* background-image: url(/img/var4.jpg); */
+    /* background-image: url(https://partheniumprojects.com/wp-content/uploads/2019/01/working-womens-hostel-management-system.jpg); */
     background-size: cover;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #7ca8d7;
+    /* background-color: #f0f0f0; */
   }
   
   .container {
@@ -12,7 +14,8 @@ body {
     margin: 50px auto;
     padding: 20px;
     text-align: center;
-    background-color: #ffffff7f;
+    background-color: white;
+    /* background-color: #ffffff7f; */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
@@ -31,7 +34,7 @@ body {
   .login-option {
     padding: 20px;
     margin: 0 20px;
-    background-color: #f9f9f981;
+    background-color: #d0e0f0fc;
     border: 1px solid #e0e0e0;
     
     border-radius: 8px;

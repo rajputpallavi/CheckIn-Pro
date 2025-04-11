@@ -1,7 +1,8 @@
 body {
-    background-image: url(/img/var1.jpg);
+    background-image: url(https://img.freepik.com/free-vector/student-dormitory-room-with-bunk-laptop-desk-office-chair-bookshelf-vector-cartoon-interior-empty-dorm-bedroom-hostel-apartment-with-wooden-bed-with-ladder-table_107791-9859.jpg);
     background-size: cover;
     margin: 0;
+    
 }
 
 .years {
@@ -29,8 +30,8 @@ body {
 }
 
 .box1 {
-    background-color: #3333337f; 
-    color: #fff;
+    /* background-color: #3333337f;  */
+    color: #fffffff4;
     padding: 10px;
     text-align: center;
 }
@@ -86,7 +87,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f7f9fb;
+    background-color: #f7fafb;
     transition: opacity 0.75s, visibility 0.75s;
   }
 

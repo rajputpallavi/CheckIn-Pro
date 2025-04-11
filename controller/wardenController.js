@@ -115,7 +115,7 @@ const checkHostellers = asyncHandler(async(req, res) =>{
 // @access public
 const sendStudentDetailByID = asyncHandler(async(req, res) =>{
     const details = req.body;
-    const student = await Students.findOne({jntu_no : details["no"]});
+    const student = await Students.findOne({no : details["no"]});
     console.log(`no : ${details["no"]}`);
 
     if(student){
