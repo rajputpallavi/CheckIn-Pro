@@ -8,6 +8,7 @@ import {loginStudent,
     sendHostelAllocation,
     outingPermission,
     outingDetails,
+    sendStudentMainPage,
     sendOutingHistory,
     sendLoginPage,
     sendRegisterPage } from "../controller/studentController.js";
@@ -15,6 +16,7 @@ import {loginStudent,
 const router = express.Router();
 
 router.get("/loginPage", sendLoginPage);
+router.get("/studentMainPage", sendStudentMainPage);
 
 router.get("/registerPage", sendRegisterPage);
 

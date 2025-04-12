@@ -81,15 +81,25 @@ const loginStudent = asyncHandler( async(req, res) => {
   }
   const student = await Student.findOne({no});
   
-  if(student && await bcrypt.compare(password, student.password)){
+  if (student && (await bcrypt.compare(password, student.password))) {
     uniqueStudentRegNo = no;
     console.log(`uniqueStudentRegNo = ${uniqueStudentRegNo}`);
     res.sendFile(path.join(staticPath, 'student_main.html'));
   }
-  else{
-    // res.send("Invalid Credentials.");
-    res.sendFile(path.join(staticPath, 'student_main.html'));
+  else {
+    console.log(`Invalid credentials`);
+    res.status(401).json({ message: "Invalid credentials. Please try again." }); // Send a 401 Unauthorized status
+    // Optionally, you could also send the login page again:
+    // res.sendFile(path.join(staticPath, 'student_login.html'));
   }
+});
+
+
+// @desc Send Student Main page
+// @ route GET /api/students/studentMainPage
+// @access public
+const sendStudentMainPage = asyncHandler(async (req, res) => {
+  res.sendFile(path.join(staticPath, 'student_main.html'));
 });
 
 
@@ -225,6 +235,7 @@ const sendOutingHistory = asyncHandler( async(req, res) =>{
 
 export {loginStudent,
   registerStudent,
+  sendStudentMainPage,
   selectHostel,
   acceptHostelID,
   acceptRoom,
